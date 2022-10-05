@@ -1,0 +1,192 @@
+:root {
+   --bgColor: #1c2329;
+}
+
+body {
+   background: var(--bgColor);
+}
+h1 {
+   color: #ffffff;
+   font-family: "Lato", sans-serif;
+   font-size: 54px;
+   font-weight: 300;
+   line-height: 58px;
+   margin: 0 0 58px;
+}
+
+#header1{
+   color: orange;
+}
+
+#infographic .circle {
+   width: 320px;
+   height: 320px;
+   border-radius: 50%;
+   border: 2px solid;
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   text-align: center;
+   padding: 40px;
+   position: absolute;
+   left: 50%;
+}
+#infographic :not(:nth-child(even)) .circle {
+   transform: translateX(-100%);
+}
+#infographic .circle i {
+   font-size: 5em;
+   margin-bottom: 20px;
+   /* color: currentColor; */
+   color: white;
+}
+#infographic article {
+   max-width: 410px;
+   margin-bottom: 20px;
+   cursor: pointer;
+   left: 50%;
+   position: relative;
+}
+#infographic article header {
+   border-top-right-radius: 30px;
+   border-bottom-right-radius: 30px;
+}
+#infographic article header i {
+   display: flex;
+   font-size: 2em;
+   border-radius: 50%;
+   background-clip: padding-box;
+   padding: 14px;
+   transition: transform 0.4s;
+   color: #fff;
+   border: 16px solid var(--bgColor);
+   margin: -16px 0 -16px -20px;
+}
+#infographic article header h6 {
+   text-transform: uppercase;
+   margin: 0 30px;
+   padding: 5px;
+}
+#infographic article .body {
+   background: var(--bgColor);
+   padding: 0 20px;
+   border-bottom-right-radius: 30px;
+   border-bottom-left-radius: 30px;
+   max-height: 0;
+   transition: max-height 0.5s, padding 0.5s;
+   overflow: hidden;
+}
+#infographic article .body .btn {
+   padding: 3px 10px;
+   text-transform: uppercase;
+}
+#infographic :nth-child(even) article {
+   text-align: right;
+   transform: translateX(-100%);
+}
+#infographic :nth-child(even) article header {
+   flex-flow: row-reverse;
+   border-top-left-radius: 30px;
+   border-bottom-left-radius: 30px;
+}
+#infographic :nth-child(even) article header i {
+   margin: -16px -20px -16px 0;
+}
+#infographic article[data-step="1"] {
+   margin-left: 20px;
+}
+#infographic article[data-step="2"] {
+   margin-left: 50px;
+}
+#infographic article[data-step="3"] {
+   margin-left: 46px;
+}
+#infographic article[data-step="4"] {
+   margin-left: 0;
+}
+#infographic article[data-step="5"] {
+   margin-left: -60px;
+}
+#infographic article[data-step="6"] {
+   margin-left: -40px;
+}
+#infographic article[data-step="7"] {
+   margin-left: -70px;
+}
+#infographic article[data-step="8"] {
+   margin-left: -60px;
+}
+#infographic article[data-step="9"] {
+   margin-left: 0;
+}
+#infographic article[data-step="10"] {
+   margin-left: 70px;
+}
+#infographic article[data-step="11"] {
+   margin-left: 60px;
+}
+#infographic article[data-step="12"] {
+   margin-left: 100px;
+}
+#infographic article[data-step="13"] {
+   margin-left: 80px;
+}
+#infographic article[data-step="14"] {
+   margin-left: 30px;
+}
+#infographic article[data-step="15"] {
+   margin-left: -50px;
+}
+#infographic article[data-step="16"] {
+   margin-left: -250px;
+}
+#infographic .one article header {
+   background-color: orange;
+   color: white;
+}
+.header4{
+color: wheat;
+}
+.hello3{
+   color: wheat;
+}
+.header3{
+   /* background-color: red; */
+    color: black;
+}
+#infographic .one article header i {
+   background-color: orange;
+}
+#infographic .two article header {
+   background-color: rgba(0, 108, 99, 0.1);
+   color: #006c63;
+}
+#infographic .two article header i {
+   background-color: #28a745;
+}
+#infographic .three article header {
+   background-color: wheat;
+   color: black;
+}
+#infographic .three article header i {
+   background-color:wheat;
+}
+#infographic article:hover header i {
+   transform: scale(1.2);
+}
+#infographic article.active header {
+   border-bottom-right-radius: 0;
+}
+#infographic article.active header i {
+   --opacity: 0.4;
+   transform: scale(1) !important;
+}
+#infographic article.active .body {
+   padding: 20px;
+   max-height: 300px;
+   border: 1px solid;
+}
+#infographic .two article.active header {
+   border-bottom-left-radius: 0;
+}
+
